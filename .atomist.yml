@@ -43,7 +43,11 @@ generator:
 kind: "operation"
 client: "atomist"
 editor:
+
   name: "atomist-rugs.spring-boot-editors.AddDockerMavenPlugin"
+
+  name: "atomist-rugs.spring-boot-editors.AddDockerMavenBuild"
+
   group: "atomist-rugs"
   artifact: "spring-boot-editors"
   version: "0.3.0"
@@ -51,4 +55,21 @@ editor:
     repo: "atomist-rugs/spring-boot-editors.git"
     branch: "3ef0b81b36ddada7a53d54ee9b731665de02a99b"
     sha: "3ef0b81"
+
+  parameters:
+    - "base_docker_repository": "src"
+
+---
+kind: "operation"
+client: "atomist"
+editor:
+  name: "atomist-rugs.spring-boot-neo4j-editors.AddNeo"
+  group: "atomist-rugs"
+  artifact: "spring-boot-neo4j-editors"
+  version: "0.1.0"
+  origin:
+    repo: "atomist-rugs/spring-boot-neo4j-editors.git"
+    branch: "3745990bac2bf561c65343e79c4fbf2e4438da5d"
+    sha: "3745990"
+
 
